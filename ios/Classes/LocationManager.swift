@@ -17,7 +17,7 @@ class LocationManager {
         manager.distanceFilter = SharedPrefsUtil.distanceFilter()
         manager.pausesLocationUpdatesAutomatically = false
         if #available(iOS 11, *) {
-            manager.showsBackgroundLocationIndicator = true
+            manager.showsBackgroundLocationIndicator = false
         }
         if #available(iOS 9.0, *) {
             manager.allowsBackgroundLocationUpdates = true
